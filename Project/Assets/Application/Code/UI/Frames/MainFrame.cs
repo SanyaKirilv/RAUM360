@@ -49,12 +49,12 @@ public class MainFrame : ViewComponent<MainFrame>
     public async void ShowFrame()
     {
         await UniTask.WhenAll(
-            Frame.Change(new V2(1280, 720), null, ToggleDuration),
+            Frame.Change(new V2(1024, 720), null, ToggleDuration),
             Logo.Change(new V2(272, 272), new V2(0, -32), ToggleDuration),
-            TriangleLeft.Change(new V2(192, 192), new V2(0, 0), 1),
-            TriangleRight.Change(new V2(192, 192), new V2(0, 0), 1),
+            TriangleLeft.Change(new V2(192, 192), V2.zero, 1),
+            TriangleRight.Change(new V2(192, 192), V2.zero, 1),
             Buttons.Change(new V2(512, 288), new V2(0, 96), ToggleDuration),
-            DownPanel.Change(new V2(1280, 64), new V2(0, 0), ToggleDuration)
+            DownPanel.Change(new V2(1024, 64), V2.zero, ToggleDuration)
         );
     }
 
@@ -78,20 +78,20 @@ public class MainFrame : ViewComponent<MainFrame>
         async UniTask StageOne()
         {
             await UniTask.WhenAll(
-                Frame.Change(new V2(576, 576), null, 1),
-                Logo.Change(new V2(512, 512), new V2(0, -32), 1)
+                Frame.Change(new V2(576, 576), V2.zero, .75f),
+                Logo.Change(new V2(512, 512), new V2(0, -32), .75f)
             );
         }
 
         async UniTask StageTwo()
         {
             await UniTask.WhenAll(
-                Frame.Change(new V2(1280, 720), null, 1),
+                Frame.Change(new V2(1024, 720), null, 1),
                 Logo.Change(new V2(320, 320), new V2(0, -104), 1),
-                TriangleLeft.Change(new V2(192, 192), new V2(0, 0), 1),
-                TriangleRight.Change(new V2(192, 192), new V2(0, 0), 1),
+                TriangleLeft.Change(new V2(192, 192), V2.zero, 1),
+                TriangleRight.Change(new V2(192, 192), V2.zero, 1),
                 HelloText.Change(new V2(896, 128), new V2(0, 128), 1),
-                DownPanel.Change(new V2(1280, 64), new V2(0, 0), 1)
+                DownPanel.Change(new V2(1024, 64), V2.zero, 1)
             );
         }
 

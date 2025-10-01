@@ -4,6 +4,7 @@ using UnityEngine;
 public class LocationConfig
 {
     public string Name;
+    public string Code;
     public Sprite PreviewPhoto;
     public Texture2D EnvironmentPhoto;
     public int Angle;

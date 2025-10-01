@@ -52,20 +52,20 @@ public class LocationsFrame : ViewComponent<LocationsFrame>
         FillCard();
 
         await UniTask.WhenAll(
-            Frame.Change(new V2(1854, 912), null, ToggleDuration),
-            Title.Change(new V2(576, 128), new V2(0, -32), ToggleDuration),
-            Cards.Change(new V2(1632, 672), new V2(128, 80), ToggleDuration),
-            Button.Change(new V2(96, 160), new V2(16, 0), ToggleDuration),
-            DownPanel.Change(new V2(1854, 64), new V2(0, 0), ToggleDuration)
+            Frame.Change(new V2(1696, 1030), null, ToggleDuration),
+            Title.Change(new V2(346, 96), new V2(0, -40), ToggleDuration),
+            Cards.Change(new V2(1632, 672), new V2(0, 12), ToggleDuration),
+            Button.Change(new V2(160, 96), new V2(0, 80), ToggleDuration),
+            DownPanel.Change(new V2(1696, 64), new V2(0, 0), ToggleDuration)
         );
     }
 
     public async void HideFrame()
     {
         await UniTask.WhenAll(
-            Title.Change(new V2(576, 128), new V2(0, 2000), ToggleDuration),
-            Cards.Change(new V2(1632, 672), new V2(2000, 80), ToggleDuration),
-            Button.Change(new V2(96, 160), new V2(-2000, 0), ToggleDuration)
+            Title.Change(new V2(346, 96), new V2(0, 2000), ToggleDuration),
+            Cards.Change(new V2(1632, 672), new V2(2000, 12), ToggleDuration),
+            Button.Change(new V2(160, 96), new V2(0, -2000), ToggleDuration)
         );
     }
 

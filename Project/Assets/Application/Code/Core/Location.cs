@@ -93,7 +93,7 @@ public class Location : ReferenceBehaviour<Location>
 
     public void TogglePoints()
     {
-        Points.ForEach(p => p.SetActive(p.name == $"{SelectedLocation.Name} [Points]"));
+        Points.ForEach(p => p.SetActive(p.name == $"[Points] {SelectedLocation.Code}"));
     }
 
     #endregion

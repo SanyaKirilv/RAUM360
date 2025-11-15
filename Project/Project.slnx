@@ -1,0 +1,8 @@
+﻿<Solution>
+  <Project Path="unity.extensions.csproj" />
+  <Project Path="Assembly-CSharp-Editor.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="LeTai.TranslucentImage.csproj" />
+  <Project Path="LeTai.TranslucentImage.Editor.csproj" />
+  <Project Path="BetterHierarchy.csproj" />
+</Solution>
